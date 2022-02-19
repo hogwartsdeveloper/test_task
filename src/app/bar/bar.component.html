@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-xl">
+      <a class="navbar-brand" href="#">{{ logoText }}</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item" *ngFor="let i of navLinks">
+
+                <a class="nav-link" *ngIf="i.icon; else noIcon">
+                    <i class="{{i.name}}"></i>
+                </a>
+
+                <ng-template #noIcon>
+                    <a class="nav-link" >{{i.name}}</a>
+                </ng-template>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
