@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { BarComponent } from "./bar/bar.component";
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
+import { ServiceComponent } from './service/service.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BarComponent,
     HeaderComponent,
-    AboutComponent
+    AboutComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,

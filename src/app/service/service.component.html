@@ -1,0 +1,18 @@
+<div class="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 service__text">
+                <h2>{{ title }}</h2>
+                <p>{{ description }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 service__card" *ngFor="let item of services">
+                <img src="/assets/smartphone_copy.svg" />
+                <h3>{{ item.name }}</h3>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                <button>READ MORE</button>
+            </div>
+        </div>
+    </div>
+</div>
