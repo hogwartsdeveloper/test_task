@@ -8,14 +8,20 @@
                 </div>
             </div>
         </div>
-        <div class="row team__cards">
-            <div class="col-md-4 team__card" *ngFor="let item of team">
-                <img src="{{ item.image }}">
-                <h3>{{ item.name }}</h3>
-                <p>{{ item.position }}</p>
-                <div class="team__card__messangers">
-                    <div class="team__card__messanger" *ngFor="let messanger of messengers">
-                        <i class="{{ messanger.icon }}"></i>
+        <div class="row">
+            <div class="col-md-4" *ngFor="let item of team">
+                <div class="team__card">
+                    <div class="team__card__img">
+                        <img src="{{ item.image }}">
+                    </div>
+                    <div class="team__card__text">
+                        <h3>{{ item.name }}</h3>
+                        <p>{{ item.position }}</p>
+                    </div>
+                    <div class="team__card__messengers">
+                        <div class="team__card__messengers__item" *ngFor="let messanger of messengers">
+                            <i class="{{ messanger.icon }}"></i>
+                        </div>
                     </div>
                 </div>
             </div>
