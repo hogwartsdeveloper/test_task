@@ -1,0 +1,40 @@
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 contact__text">
+                <h2>{{ title }}</h2>
+                <p>{{ description }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" *ngFor="let item of contacts">
+                <div class="contact__card">
+                    <div class="contact__card__icon">
+                        <i class="{{ item.icon }}"></i>
+                    </div>
+                    <div class="contact__card__data">
+                        <p>{{ item.contact }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" placeholder="Your NAME">
+            </div>
+            <div class="col-md-6">
+                <input type="text" placeholder="Your EMAIL">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <textarea name="" id="" cols="30" rows="10">Write Massage</textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button>SEND</button>
+            </div>
+        </div>
+    </div>
+</div>

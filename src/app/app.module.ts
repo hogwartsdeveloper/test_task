@@ -9,6 +9,7 @@ import { BarComponent } from "./bar/bar.component";
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './service/service.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ServiceComponent } from './service/service.component';
     BarComponent,
     HeaderComponent,
     AboutComponent,
-    ServiceComponent
+    ServiceComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
