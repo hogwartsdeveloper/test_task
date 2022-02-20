@@ -1,0 +1,46 @@
+@import '../../../styles'
+.card
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 370px
+    max-height: 438px
+    margin-bottom: 1rem
+    transition: .5s
+
+    &__img
+        margin-top: 1rem
+        margin-bottom: 2.3rem
+
+    &__text
+        display: flex
+        flex-direction: column
+        align-items: center
+        color: $darc-color
+        transition: .5s
+
+        & > h3
+            font-size: 1.25rem
+            letter-spacing: 1px
+
+        & > p
+            font-size: 0.93rem
+            letter-spacing: 0.75px
+            text-align: center
+            margin-bottom: 2rem
+            font-weight: 400
+    & > button
+            padding: 0.625rem
+            background-color: rgba(0, 0, 0, 0)
+            border: 2px solid $darc-color
+            margin-bottom: 1rem
+            transition: .5s
+
+    &:hover
+        background-color: $green-color
+    &:hover &__text
+        color: $white-color
+    
+    &:hover button
+        border-color: $white-color
+        color: $white-color

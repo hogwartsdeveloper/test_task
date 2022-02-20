@@ -1,0 +1,10 @@
+<div class="card" (mouseenter)="changeServiceIcon()" (mouseleave)="reChangeServiceIcon()">
+    <div class="card__img">
+        <img src="{{ serviceIcon }}">
+    </div>
+    <div class="card__text">
+        <h3>{{ service.name }}</h3>
+        <p>{{ serviceDescription }}</p>
+    </div>
+    <button>{{ serviceButton }}</button>
+</div>

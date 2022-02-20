@@ -1,5 +1,5 @@
 <div class="service">
-    <div class="container">
+    <div class="container service__container">
         <div class="row">
             <div class="col-md-12 service__text">
                 <h2>{{ title }}</h2>
@@ -7,11 +7,12 @@
             </div>
         </div>
         <div class="row">
-            <div (mouseenter)="changeServiceIcon()" (mouseleave)="reChangeServiceIcon()" class="col-md-4 service__card" *ngFor="let item of services">
-                <img src="{{ serviceIcon }}" />
+            <div class="col-md-4" *ngFor="let item of services">
+                <!-- <img src="{{ serviceIcon }}" />
                 <h3>{{ item.name }}</h3>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
-                <button>READ MORE</button>
+                <button>READ MORE</button> -->
+                <service-card [service]="item" [serviceIcon]="serviceIcon" [serviceDescription]="description" [serviceButton]="buttonText"></service-card>
             </div>
         </div>
     </div>

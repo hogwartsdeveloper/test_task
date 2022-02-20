@@ -1,7 +1,7 @@
 import { Component, OnInit, SimpleChange } from "@angular/core";
 
 
-interface service {
+export interface Service {
     name: string;
 }
 
@@ -23,9 +23,9 @@ export class ServiceComponent implements OnInit{
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam,
         `
+    buttonText: string = "READ MORE"
     
-    
-    services: service[] = [
+    services: Service[] = [
         {name: "Research"},
         {name: "Portfolio"},
         {name: "Support"},
@@ -33,12 +33,4 @@ export class ServiceComponent implements OnInit{
         {name: "Development"},
         {name: "Design"},
     ]
-
-    changeServiceIcon() {
-        this.serviceIcon = "/assets/smartphone.svg";
-    }
-
-    reChangeServiceIcon() {
-        this.serviceIcon = "/assets/smartphone_copy.svg"
-    }
 }

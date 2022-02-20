@@ -14,6 +14,8 @@ import { ServiceComponent } from './service/service.component';
 import { ContactComponent } from './contact/contact.component';
 import { TeamComponent } from './team/team.component';
 
+import { CardComponent } from './service/card/card.component';
+
 
 const appRoutes: Routes = [
     {path: "", component: HomeComponent},
@@ -32,7 +34,8 @@ const appRoutes: Routes = [
     ServiceComponent,
     ContactComponent,
     TeamComponent,
-    HomeComponent
+    HomeComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
