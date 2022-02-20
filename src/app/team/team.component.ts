@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Title } from "../section-title/section-title.component";
 
 
 interface Team {
@@ -17,14 +18,17 @@ interface Messenger {
     styleUrls: ["./team.component.sass"]
 })
 export class TeamComponent {
-    title: string = "Our Team Member"
-    description: string = 
-        `
+    title: Title = {
+        title: "Our Team Member",
+        description: `
             Lorem ipsum dolor sit amet, 
             consectetur adipisicing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam,
-        `
+        `,
+        color: true
+    }
+
     team: Team[] = [
         {image: "/assets/nurik.jpg", name: "Nursultan Nazarbayev", position: "Former President of Kazakhstan"},
         {image: "/assets/putin.jpeg", name: "Vladimir Putin", position: "President of Russia"},

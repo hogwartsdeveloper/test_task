@@ -1,18 +1,13 @@
 <div class="service">
     <div class="container service__container">
         <div class="row">
-            <div class="col-md-12 service__text">
-                <h2>{{ title }}</h2>
-                <p>{{ description }}</p>
+            <div class="col-md-12">
+                <section-title [title]="title"></section-title>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4" *ngFor="let item of services">
-                <!-- <img src="{{ serviceIcon }}" />
-                <h3>{{ item.name }}</h3>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
-                <button>READ MORE</button> -->
-                <service-card [service]="item" [serviceIcon]="serviceIcon" [serviceDescription]="description" [serviceButton]="buttonText"></service-card>
+                <service-card [service]="item" [serviceIcon]="serviceIcon" [serviceDescription]="description" [serviceButton]="buttonText" (mouseenter)="changeServiceIcon()" (mouseleave)="reChangeServiceIcon()"></service-card>
             </div>
         </div>
     </div>

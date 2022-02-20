@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { TeamComponent } from './team/team.component';
 
 import { CardComponent } from './service/card/card.component';
+import { SectionTitleComponent } from './section-title/section-title.component';
 
 
 const appRoutes: Routes = [
@@ -35,7 +36,8 @@ const appRoutes: Routes = [
     ContactComponent,
     TeamComponent,
     HomeComponent,
-    CardComponent
+    CardComponent,
+    SectionTitleComponent
   ],
   imports: [
     BrowserModule,

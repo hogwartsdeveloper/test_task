@@ -23,17 +23,8 @@ export class CardComponent implements OnInit, OnChanges{
     }
 
     ngOnChanges(changes: SimpleChanges): void {
+        this.ngOnInit()
     }
 
-    changeServiceIcon() {
-        this.serviceIcon = "/assets/smartphone.svg";
-        console.log(this.serviceIcon)
 
-        
-    }
-
-    reChangeServiceIcon() {
-        this.serviceIcon = "/assets/smartphone_copy.svg"
-        console.log(this.serviceIcon)
-    }
 }
