@@ -1,4 +1,4 @@
-
+@import '../../styles'
 .service
     background-color: #e4fdf9
 
@@ -17,19 +17,19 @@
         flex-direction: column
         align-items: center
         justify-content: center
-        background-color: #fff
+        background-color: $white-color
         margin: 20px
-        color: #212121
+        color: $darc-color
 
         &:hover
-            background-color: #00897b
-            color: #fff
+            background-color: $green-color
+            color: $white-color
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35)
             transition: .5s
 
         &:hover button
-            border: 2px solid #fff
-            color: #fff
+            border: 2px solid $white-color
+            color: $white-color
 
         & > img
             margin-top: 58px
@@ -44,5 +44,5 @@
         & > button
             padding: 10px
             background-color: rgba(0, 0, 0, 0)
-            border: 2px solid #212121
+            border: 2px solid $darc-color
             margin-bottom: 49px
