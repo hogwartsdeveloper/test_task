@@ -1,7 +1,6 @@
 @import '../../styles'
     
 .about
-    height: 100vh
     display: flex
     flex-direction: column
     align-items: center
@@ -11,26 +10,47 @@
         display: flex
         flex-direction: column
         align-items: center
+        margin-top: 6.5rem
+        color: $darc-color
+        max-width: 620px
 
         & > h2
             font-size: 1.875rem
+            font-weight: 700
+            margin-bottom: 1.5rem
         
         & > p
             font-size: 0.93rem
             letter-spacing: 0.75px
-            padding: 0 30vw
             text-align: center
             margin-bottom: 7.75rem
-            color: $darc-color
+            font-weight: 400
+    
+    &__items
+        width: 100%
+        display: flex
+        justify-content: space-around
     
     &__item
         display: flex
         flex-direction: column
         align-items: center
+        justify-content: center
+        color: $darc-color
+        max-width: 254px
+        margin-bottom: 7rem
+
+
+        & > img
+            margin-bottom: 1.8rem
+        
+        & > h3
+            font-size: 1.25rem
+            font-weight: 400
+            margin-bottom: 1.4rem
 
         & > p
             text-align: center
-            margin: 0 9rem
             color: $darc-color
             font-size: 0.93rem
             letter-spacing: 0.75px
