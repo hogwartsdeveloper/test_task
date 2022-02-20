@@ -1,23 +1,29 @@
-<div class="container-fluid header">
-    <div class="header__container">
-        <div class="row">
-            <div class="col-xl-12 header__text ">
-                <h1>Web development project</h1>
-                <p>Very suitable to support all web development projects</p>
+<div class="header">
+    <div class="container header__container">
+            <div class="row">
+                <div class="col-xl-12 ">
+                    <div class="header__text">
+                        <h1>{{ title }}</h1>
+                        <p>{{ description }}</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-sm-12 btn_w">
-                <button class="header__btn header__btn__service">our services</button>
-                <button class="header__btn header__btn__hire">hire is now</button>
+            
+            <div class="row">
+                <div class="col-sm-12 btn_w">
+                    <div class="header__btns">
+                        <button class="header__btn header__btns__service">{{ service_btn }}</button>
+                        <button class="header__btn header__btns__hire">{{ hire_btn }}</button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-xl-12 chevron-down btn-right">
-                <i class="bi bi-chevron-down"></i>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="header__arrow__down">
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                </div>
             </div>
-        </div>
     </div>
 </div>

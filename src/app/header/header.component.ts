@@ -6,5 +6,8 @@ import { Component } from "@angular/core";
     styleUrls: ["./header.component.sass"]
 })
 export class HeaderComponent {
-    backgrountImgUrl: string = "assets/rectangle.png";
+    title: string = "Web development project";
+    description: string = "Very suitable to support all web development projects";
+    service_btn: string = "our services"
+    hire_btn: string = "hire is now"
 }
