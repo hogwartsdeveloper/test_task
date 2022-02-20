@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit, SimpleChange } from "@angular/core";
 
 
 interface service {
@@ -10,7 +10,11 @@ interface service {
     templateUrl: "./service.component.html",
     styleUrls: ["./service.component.sass"]
 })
-export class ServiceComponent {
+export class ServiceComponent implements OnInit{
+    ngOnInit(): void {
+        
+    }
+    serviceIcon: string = "/assets/smartphone_copy.svg"
     title: string = "Our Services"
     description: string =  
         `
@@ -20,6 +24,7 @@ export class ServiceComponent {
             Ut enim ad minim veniam,
         `
     
+    
     services: service[] = [
         {name: "Research"},
         {name: "Portfolio"},
@@ -28,4 +33,12 @@ export class ServiceComponent {
         {name: "Development"},
         {name: "Design"},
     ]
+
+    changeServiceIcon() {
+        this.serviceIcon = "/assets/smartphone.svg";
+    }
+
+    reChangeServiceIcon() {
+        this.serviceIcon = "/assets/smartphone_copy.svg"
+    }
 }

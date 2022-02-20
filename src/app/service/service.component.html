@@ -7,8 +7,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 service__card" *ngFor="let item of services">
-                <img src="/assets/smartphone_copy.svg" />
+            <div (mouseenter)="changeServiceIcon()" (mouseleave)="reChangeServiceIcon()" class="col-md-4 service__card" *ngFor="let item of services">
+                <img src="{{ serviceIcon }}" />
                 <h3>{{ item.name }}</h3>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
                 <button>READ MORE</button>
