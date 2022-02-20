@@ -3,6 +3,7 @@ import { Component } from "@angular/core";
 interface navProps {
     name: string;
     icon: boolean;
+    path: string;
 }
 
 @Component({
@@ -13,12 +14,11 @@ interface navProps {
 export class BarComponent {
     logoText: string = "Test Task Project";
     navLinks: navProps[] = [
-        {name: 'Home', icon: false},
-        {name: 'About', icon: false},
-        {name: 'Servising', icon: false},
-        {name: 'Portfolio', icon: false},
-        {name: 'Blog', icon: false},
-        {name: "Contact us", icon: false},
-        {name: "bi bi-search", icon: true}
+        {name: 'Home', icon: false, path: ""},
+        {name: 'About', icon: false, path: "about"},
+        {name: 'Servising', icon: false, path: "services"},
+        {name: 'Our Team', icon: false, path: "team"},
+        {name: "Contact us", icon: false, path: "contact"},
+        {name: "bi bi-search", icon: true, path: ""}
     ]
 }
