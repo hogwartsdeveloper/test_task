@@ -6,7 +6,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4" *ngFor="let item of services">
+            <div class="col-sm-12 col-md-4" *ngFor="let item of services">
                 <service-card [service]="item" [serviceIcon]="serviceIcon" [serviceDescription]="description" [serviceButton]="buttonText" (mouseenter)="changeServiceIcon()" (mouseleave)="reChangeServiceIcon()"></service-card>
             </div>
         </div>
